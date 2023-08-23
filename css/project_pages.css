@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css?family=Questrial');
+@import url('https://fonts.googleapis.com/css?family=Russo_One');
+
+html {
+    scroll-behavior: smooth;
+    background-color: #282828;
+
+}
+
+::selection {
+    background: rgba(0, 255, 145, 0.51);
+}
+
+main {
+    margin: 0 auto;
+    padding: 0;
+    font-family: serif;
+    font-size: 15px;
+    color: #dcdcdc;
+    background-color: #69696934;
+    padding: 10px;
+    border-radius: 10px;
+    width: 70vw;
+    max-width: 1200px;
+    min-width: 300px;
+}
+
+#field {
+    background-color: #00000034;
+    padding: 30px;
+    border-radius: 10px;
+
+}
+
+h1,
+h2,
+h3 {
+    font-family: Russo One, Geneva, Tahoma, sans-serif;
+}
+
+a,
+p,
+div,
+span,
+li,
+ul,
+ol {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+    text-shadow: 2px 2px 2px #000000;
+    -webkit-text-stroke: 0.1px #000000;
+    padding: 5px;
+    font-size: 1.8em;
+}
+
+h1 {
+    text-align: center;
+    text-shadow: 2px 2px 2px #ff009d;
+    -webkit-text-stroke: 0.1px #ff009d;
+    padding: 5px;
+    font-size: 1.8em;
+}
+
+#date,
+#client,
+#who,
+#edit {
+    text-align: center;
+    margin: 0;
+    font-family: Questrial, Geneva, Tahoma, sans-serif;
+
+}
+
+
+#image {
+    display: block;
+    max-width: 500px;
+    width: 70vw;
+    max-height: 500px;
+    margin: 0 auto;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    object-fit: scale-down;
+    border: 2px #4b4b4beb solid;
+    transform: scale(1);
+    transition: 0.2s;
+}
+
+#image:hover {
+    transform: scale(1.2);
+    z-index: 1;
+    position: relative;
+}
+
+#pdf {
+    display: block;
+    width: 60vw;
+    height: 70vh;
+    margin: 0 auto;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    object-fit: cover;
+    border: 2px #4b4b4beb solid;
+}
+
+#video {
+    display: block;
+    width: 60vw;
+    height: 40vh;
+    margin: 0 auto;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    object-fit: cover;
+    border: 2px #4b4b4beb solid;
+
+}
+
+#backtotop {
+    position: sticky;
+    text-align: center;
+    top: 87vh;
+    bottom: 20px;
+    z-index: 1;
+    background-color: #1f1f1feb;
+    width: 36px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px #4b4b4beb solid;
+    margin-top: -70px;
+    left: 99vw;
+    display: none;
+    transform: translateY(0px);
+    transition: all 0.2s ease-in;
+}
+
+#backtotop:hover {
+    transform: translateY(-10px);
+    transition: all 0.2s ease-out;
+
+}
+
+.back-to-top {
+    text-decoration: none;
+    font-size: 1.8em;
+}
+
+button {
+    max-width: 70vw;
+    text-align: center;
+    background-color: #1f1f1feb;
+    border: 2px #4b4b4beb solid;
+    padding: 15px;
+    margin: 0px auto;
+    margin-top: 20px;
+    color: white;
+    text-decoration: underline #1f1f1feb;
+    transition: all 0.1s ease-out;
+    border-radius: 10px;
+    font-family: Questrial, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+    margin-bottom: 10px;
+    display: block;
+}
+
+button:hover {
+    background-color: #118AB2;
+    text-decoration: underline #118AB2;
+    border: 2px #0c5a74 solid;
+}
+
+footer {
+    font-size: 1.2em;
+    text-align: center;
+    padding: 20px;
+    color: white;
+    background-color: #1f1f1ff8;
+    margin: 0 auto;
+}
+
+
+@media (min-width: 600px) {
+    #main {
+        width: 600px;
+    }
+}
+@media (min-width: 850px) {
+    #backtotop {
+        display: block;
+    }
+}

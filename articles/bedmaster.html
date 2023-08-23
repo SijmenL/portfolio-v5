@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>afstandsbediening</title>
+  <link rel="stylesheet" href="../css/project_pages.css" />
+
+  <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
+  <link rel="manifest" href="../favicon/site.webmanifest">
+  <link rel="mask-icon" href="../favicon/safari-pinned-tab.svg" color="#575294">
+  <meta name="msapplication-TileColor" content="#575294">
+  <meta name="theme-color" content="#575294">
+</head>
+
+<body>
+  <a class="back-to-top" href="#top">
+    <div id="backtotop">&#9757;</div>
+  </a>
+  <header>
+    <a href="JavaScript:window.close()" aria-label="Link naar de vorige pagina">
+      <button type="submit">
+        &#8656; Terug naar de vorige pagina</button>
+    </a>
+  </header>
+  <main>
+    <div id="container">
+      <h1>de BedMaster</h1>
+      <p id="date">19-10-2022</p>
+      <p id="client">Hogeschool Rotterdam</p>
+      <p id="who">Sijmen, Viggo, Timon, Michiel</p>
+      <p id="edit">Laatst bewerkt op: 06-11-2022</p>
+      <p id="description"><i>De bedmaster is een serie van apparaten dat je kan aansturen met een afstandsbediening. Met
+          de
+          afstandsbediening kun je bijvoorbeeld je licht dimmen of de hoogte van je gordijn instellen. Hieronder staat
+          het
+          volledige werkproces beschreven.</i></p>
+      <p>We zijn begonnen met het uitvoeren van een aantal testjes, en we hebben besloten om met de infrarood sensor te
+        gaan
+        werken door een afstandsbediening te maken die onze eigen apparaten kan aansturen, zoals een gordijn die open
+        gaat
+        of een muziekje dat afspeelt.</p>
+      <img id="image" src="../projects/bedmaster/eerste_test.jpg"
+        alt="Afbeelding van de afstandsbedining die ik gemaakt heb">
+      <h2>Planning</h2>
+      <p>Voor dit project hebben we een duidelijk to do list gemaakt in github en duidelijke deadlines opgesteld. Ook
+        hebben
+        we een taakverdeling gemaakt voor de verschillende modules. </p>
+      <img id="image" src="../projects/bedmaster/planning.png" alt="Afbeelding van de planningm">
+      <p>In deze to do list hebben we van te voren een aantal items gezet en die hebben we gaandeweg bijgehouden met
+        onze
+        taken. Iedereen kon een taak toevoegen of verwijderen, dus we konden zo met elkaar communiceren wat er allemaal
+        klaar was, ook als het niet iemands taak was.</p>
+      <img id="image" src="../projects/bedmaster/deadlines.png" alt="Afbeelding van de deadlines die ik gesteld heb">
+      <p>Verder hebben we ook deadlines gesteld aan de verschillende modules en bijgehouden welke projecten langer de
+        tijd
+        nodig hadden en welke projecten op tijd af waren. De groene modules zijn binnen de gestelde deadline afgemaakt.
+        De
+        oranje module had extra tijd nodig om afgemaakt te worden en de rode module hebben we geschrapt.</p>
+      <img id="image" src="../projects/bedmaster/taakverdeling.png" alt="Afbeelding van de taakverdeling">
+      <p>Ik heb hier de taakverdeling weggezet, met de taakverdeling die we besproken hadden tijdens de vorige sprint en
+        met
+        een lijstje wat er daadwerkelijk door iedereen is gedaan.</p>
+      <img id="image" src="../projects/bedmaster/kalender.png" alt="Afbeelding van de kalender">
+      <p>Ook heb ik nog in een kalender bijgehouden wanneer wat gereed was. De blauwe delen zijn onze eigen gestelde
+        deadlines, en betekenen ook dat die modules voor 99% klaar zijn. Op de laatste dag hebben we ervoor gezorgd dat
+        alles 100% gereed was voor de presentatie, zodat we tussendoor altijd wel aanpassingen konden doen. </p>
+      <h2>Proces</h2>
+      <p>We hebben een aantal ontvangers bedacht, maar ook de afstandsbediening zelf gebouwd. Ik heb hier het werkproces
+        bijgehouden.</p>
+      <p>Ik ben begonnen met het ontwerpen van de afstandsbediening, zo heb ik de layout van de knopjes bedacht en het
+        in
+        hout gegraveerde design gemaakt. Ik heb de stukken hout aan elkaar gelijmd en Viggo heeft de lampjes gesoldeerd.
+        We
+        hebben ook zelf de cablemanagement bedacht en onze 'handtekening' verstopt aan de binnenkant van de
+        afstandsbediening.</p>
+      <img id="image" src="../projects/bedmaster/achterplaatje.jpeg"
+        alt="Afbeelding van het cablemanagement design in de bedmaster">
+      <p>Wel hebben we binnen het team steeds feedback uitgewisseld op het design van de afstandsbediening. Zo hadden we
+        bijvoorbeeld de icoontjes die op de voorkant gegraveerd staan eerst op kleine blokjes hout uitgesneden om die te
+        kunnen verplaatsen voor de locatie van knoppen. We zijn uiteindelijk met het team op de perfecte layout gekomen.
+        Dit
+        hebben we met bijna alles gedaan omtrent het design van het apparaat. We hebben ook meerdere keren
+        geëxperimenteerd
+        met verschillende doosjes waar de elektronica in gehuisd kan worden, zoals bijvoorbeeld met afgeronde hoeken of
+        verschillende knopjes. Ook is een voorbeeld de servo die de kanalen aangeeft, het eerste idee was namelijk om
+        dat
+        met lampjes te doen, maar we vonden het leuker om met de servo te proberen.</p>
+      <img id="image" src="../projects/bedmaster/afstandsbediening.png"
+        alt="Afbeelding van het cablemanagement design in de bedmaster">
+      <img id="image" src="../projects/bedmaster/afstandbediening_tekening.png" alt="Eerste tekening van de bedmaster">
+      <p><i>Woensdag 5 oktober:</i></p>
+      <p>We hebben gebrainstormd over de afstandsbediening en de ontvangers, wat voor nieuwe dingen we wilden maken en
+        hoe
+        we die zouden maken. Ik heb hier kort opgeschreven wat we bedacht hebben:</p>
+      <ul>
+        <li>Muziek module, je kan muziek aan en uit zetten.</li>
+        <li>Gordijn module, je kan het gordijn op afstand open en dicht doen.</li>
+        <li>Knop module, je kan elke knop in je huis bedienen door met een servo op een knop te drukken.</li>
+        <li>Alle ontvangers moeten hetzelfde doosje en en logo hebben, om uniform te blijven.</li>
+      </ul>
+      <p>Ik ben gaan experimenteren met de servo voor de knop module en ik heb samen met Viggo het doosje van de servo
+        uitgesneden.</p>
+      <img id="image" src="../projects/bedmaster/knop%20module.jpg" alt="De knop module">
+      <p><i>Donderdag 6 oktober</i></p>
+      <p>Ik had het idee dat de ontvangers knopjes nodig hebben om ze ook zonder afstandsbediening te laten werken en om
+        ook
+        de ontvangers van kanaal te kunnen laten veranderen. Ook heb ik besloten dat er iets van een indicatie nodig is
+        die
+        aangeeft in welk kanaal de ontvanger staat en wat de ontvanger doet. Ik ben gaan experimenteren met lampjes en
+        knopjes, maar ben tot de conclusie gekomen dat we externe knoppen en een rgb LED lampje nodig hebben dat
+        verschillende kanalen kan aangeven met verschillende kleuren (in plaats van elk kanaal een eigen lampje te
+        geven),
+        dus die heb ik toen na overleg besteld.</p>
+      <img id="image" src="../projects/bedmaster/led%20test.jpg" alt="Test van de led lampjes">
+      <p><i>Maandag 10 oktober</i></p>
+      <p>We zijn verder gegaan aan de ontvanger. Ik heb een design gemaakt om erop te zetten met passende gaatjes voor
+        de
+        externe knopjes, lampje en logo die we op alle ontvangers kunnen zetten. Viggo kwam met het idee om een
+        draaiknop op
+        de afstandsbediening te maken en om een seven segment display toe te voegen aan de afstandsbediening om zo tien
+        kanalen te hebben in plaats van drie. Viggo en ik zijn toen samen gaan experimenteren met de mogelijkheden qua
+        code
+        en qua bedrading. We zijn tot de conclusie gekomen dat de draaiknop zeker een mogelijkheid is en we hebben toen
+        een
+        nieuwe bovenkant van de afstandsbediening gemaakt met een icoontje en plek voor de draaiknop. Ook het seven
+        segment
+        display hebben we besteld, maar hebben we nog niet verwerkt in de voorkant, aangezien we nog steeds niet
+        helemaal
+        zeker zijn of dat we de tijd hebben om de hele programmering om te gooien. </p>
+      <img id="image" src="../projects/bedmaster/bovenkant_afstandsbediening_laser.png" alt="Lasersnij lijnen">
+      <img id="image" src="../projects/bedmaster/bovenkant_ontvanger_laser.png" alt="Lasersnij lijnen">
+      <p><i>Woensdag 12 oktober</i></p>
+      <p>Viggo en ik hebben meegedaan aan een cursus 3D printen om onze kennis te verbreden en het misschien toe te
+        passen
+        in de bedmaster, helaas zijn we tot de conclusie gekomen dat we functionaliteit voorrang moeten geven op het
+        ontwerp, omdat we veel ambitieuze ontvangers willen maken en we alle tijd daarvoor nodig hebben. Verder heb ik
+        aan
+        de code gewerkt die de knopjes bestuurd en de externe NEOPIXEL aan de bovenkant van kleur kan laten veranderen
+        en
+        die ervoor zorgt dat de NEOPIXEL dimt als er geen input van de gebruiker is ontvangen, zodat je niet wakker
+        blijft
+        van het licht 's nachts. Ook hebben we besloten om de muziek module te laten vervallen en het muziek idee te
+        combineren met het gordijn. In plaats van een muziek module hebben we een dimbare lamp bedacht die je kan dimmen
+        met
+        de potentiometer. Ik heb een doosje gemaakt voor dit dimbare licht en ik ben begonnen aan de code voor dit
+        dimbare
+        licht. Ook heb ik een doosje gemaakt voor het gordijn, maar dit doosje was niet goed, dus die hebben we
+        weggeegooid,
+        daarnaast hebben we ook na overleg besloten om het seven segment display te laten varen, omdat het te veel tijd
+        kostte om nog een nieuw voorkantje te maken en dat de volledige code opnieuw schrijven de moeite niet waard was,
+        omdat we toch maar drie ontvangers konden maken.</p>
+      <img id="image" src="../projects/bedmaster/stukje_code_1.png" alt="Stukje code">
+      <p><i>Maandag 17 oktober</i></p>
+      <p>Ik heb een stukje gordijn gevonden die we kunnen gebruiken, dus de anderen hebben een doosje voor het gordijn
+        ontworpen. Ik ben bezig geweest met de switch module opnieuw in elkaar te zetten omdat hij kapot was gegaan in
+        vervoer. Verder heb ik de code voor het dimlicht werkende gekregen met behulp van onze peercoach.</p>
+      <img id="image" src="../projects/bedmaster/dimlicht_showcase.jpg" alt="Dimlicht">
+      <p><i>Dinsdag 18 oktober</i></p>
+      <p>Ik heb samen met Viggo en Michiel het doosje voor het gordijn aangepast aan de correcte formaten en de gaten
+        voor
+        het lampje en de knopjes uitgesneden. Ook hebben we besloten om de muziek volledig te laten vallen en om ons te
+        focussen op het gordijn omdat we denken dat dat de klapper op de vuurpijl is als het werkt. Thuis heb ik het
+        verbeterde doosje in elkaar gezet en de bedrading van het doosje gemaakt. Verder heb ik de code van het dimlicht
+        aangepast zodat het ook werkt met het gordijn.</p>
+      <img id="image" src="../projects/bedmaster/stukje_code_2.png" alt="Stukje code">
+      <p><i>Woensdag 19 oktober</i></p>
+      <p>We hebben 's ochtends allemaal de apparaten getest en de bugs uit de code gehaald. Verder hebben Viggo en ik
+        een
+        aantal Halloween decoraties gehaald om de apparaten in thema te brengen. Ook hebben we de laatste puntjes op de
+        i
+        gezet door alles extra goed vast te lijmen en alles nog een keer na te lopen voor de presentaties.</p>
+      <img id="image" src="../projects/bedmaster/werken_aan_gordijn.jpg" alt="Actie foto dat ik aan het gordijn werk">
+      <p><b>Hoe werkt de BedMaster?</b></p>
+      <p>De afstandsbediening werkt door opdrachten via infrarood te communiceren naar ontvangers. Dit werkt in
+        zogenaamde
+        kanalen, beide apparaten moeten in hetzelfde kanaal staan om te kunnen communiceren. De afstandsbediening zendt
+        ook
+        de waarde van de draaiknop op de afstandsbediening via infrarood naar de ontvanger. De afstandsbediening heeft
+        een
+        servo om aan te wijzen in welk kanaal de afstandsbediening staat en twee indicatie lampjes. Het rode lampje gaat
+        knipperen als er een ontvanger in range is, en het blauwe lampje gaat aan als de afstandsbedingen zeker weet dat
+        de
+        ontvanger de opdracht heeft uitgevoerd. Als de ontvanger de opdracht binnen krijgt voert hij uit wat hij moet
+        doen,
+        er gaat bijvoorbeeld een servo bewegen. Met de informatie van de draaiknop kan het apparaat bijvoorbeeld een
+        lampje
+        feller laten branden. Met deze waarde zou de ontvanger nog veel meer kunnen doen dan dat wat we hebben gemaakt,
+        zoals bijvoorbeeld het volume van muziek regelen, de kleur van licht veranderen, de deur op een kier zetten,
+        etc.
+        Alle ontvangers hebben een indicatie lampje die met een kleur aangeeft in welk kanaal het staat, en de kleur
+        geel
+        wordt als er een opdracht ontvangen wordt, als visuele feedback. Ook hebben alle ontvangers twee knoppen, zodat
+        de
+        ontvanger van kanaal kan veranderen én zodat de ontvanger ook nog werkt zonder afstandsbediening. Al dit heb ik
+        geprogrammeerd en getest. Elk apparaat gebruikt dezelfde code, wat dus betekend dat er maar een bestand is voor
+        alle
+        programmering van alle apparaten.</p>
+      <p>Terugblikkend zie ik dat ik meer werk heb verzet dan de rest van mijn team, terwijl we dit beter hadden kunnen
+        verdelen. Ik denk dat dit vooral aan mij ligt, aangezien ik graag dingen op mijn manier doe omdat dat meestal
+        wel
+        werkt, en de rest moet daar dan aan geloven. In het volgende teamproces moet ik daar beter op letten, en ook de
+        manieren van een ander moet willen proberen.</p>
+
+      <h2>De presentatie</h2>
+      <p>De presentaties vonden plaats op een technische halloween markt. We gingen één op één ons product presenteren
+        aan
+        onze doelgroep. Onze stakeholder voor het product was Viggo, hij ligt vaak in zijn bed en dan is hij toch te lui
+        om
+        bijvoorbeeld zijn gordijn omhoog te doen of om het licht aan te zetten. In principe zijn de stakeholders dus
+        luie
+        mensen die graag nog wat langer 's ochtends in bed blijven liggen en mensen die zich graag nog een keer
+        omdraaien.
+        Dit soort mensen houden vooral van een korte bondige uitleg zonder al te veel details die in het moment niet
+        echt
+        uitmaken. Net zoals bij sprint 2 gebruiken we daarom een kort en krachtige aanpak waarin we heel snel het
+        probleem
+        en de stakeholder schetsen. Ook het taalgebruik passen we aan op de vooral jonge mensen die van dit product
+        gebruik
+        zouden willen maken, dus niet te formeel. Om deze reden hebben we als team er ook voor gekozen om een kleine
+        powerpoint met vrijwel alleen plaatjes te vertonen, die niet alle aandacht trekt, maar wel nuttige informatie
+        aan
+        bijstanders verleent, zoals waar ze feedback kunnen geven. Mijn presentatie bestond daarom vooral uit één op één
+        op
+        een demonstratie van het product, om de stakeholders zelf het product te laten ervaren.</p>
+      <iframe id="video" src="https://www.youtube.com/embed/FOxLAhYETXA" title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+      <iframe id="video" src="https://www.youtube.com/embed/XkCe3uQkEOE" title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+      <p>Reflecterend op de eerste presentatie die ik heb gegeven verliep die redelijk stroef, het apparaat deed het
+        niet
+        direct en ik moest er nog een beetje inkomen. Na dit eerste filmpje ging het steeds soepeler en verliep de
+        presentatie telkens goed. Wel denk ik dat de inhoud van de presentatie wat breder had gemogen. Zo denk ik dat ik
+        niet per se de stakeholder duidelijk heb benoemd, maar de informatie meer verwerkt heb in het openingspraatje.
+        Ik
+        had nog specifiek kunnen benadrukken dat dit apparaat is bedoeld voor mensen die zich graag nog een keer
+        omdraaien.
+        Ook uit de feedback blijkt dat ik de stakeholder duidelijker had kunnen maken. </p>
+
+      <h2>Feedback</h2>
+      <p>De feedback op een vorige versie van het project was vooral dat de ontvangers beter uitgewerkt zouden kunnen
+        worden
+        en dat het uiterlijk van het geheel verbeterd zou kunnen worden. We hebben als team besloten dat we ons het
+        beste
+        konden focussen op de ontvangers en dat het als soepel geheel zou werken, in plaats van het uiterlijk te
+        verbeteren.
+        Het uiterlijk kan later altijd nog aangepast worden.</p>
+      <p>Ik heb nieuwe doelen voor deze sprint gesteld aan de hand van de SMART denkwijze en aan de hand van de feedback
+        op
+        het vorige project:</p>
+      <ol type="1">
+        <li>Specificeer je doel:</li>
+        <ol type="a">
+          <li>Ik wil drie verbeterde ontvangers maken en de feedback die ik ontvang beter toepassen.</li>
+          <li>Ik wil dit binnen de tijd bereiken door middel van de bestaande afstandsbediening uit sprint twee te
+            hergebruiken. </li>
+        </ol>
+        <li>Maak je doel meetbaar</li>
+        <ol type="a">
+          <li>Ik wil tussentijds bijhouden wat ik gedaan heb per dag</li>
+          <li>We willen een to do list bij gaan houden op github</li>
+        </ol>
+        <li>We willen een to do list bij gaan houden op github</li>
+        <ol type="a">
+          <li>We zijn bereid om bepaalde dingen te laten vallen als ze te hoog gegrepen blijken te zijn. (achteraf
+            natuurlijk de muziek module en het seven segment display)</li>
+        </ol>
+        <li>Stel een realistisch doel</li>
+        <ol type="a">
+          <li>We willen ons beperken tot het ontwikkelen van ontvangers, en dus de afstandsbediening hetzelfde ontwerp
+            te
+            houden. We houden ons daarmee aan de feedback van de vorige sprint, wat voornamelijk was dat de ontvangers
+            beter
+            uitgewerkt zouden kunnen worden.</li>
+        </ol>
+        <li>Maak je doel tijdgebonden</li>
+        <ol type="a">
+          <li>We hebben natuurlijk een deadline voor het hele project, maar ook voor elke ontvanger hebben we een
+            deadline
+            aangesteld. We hebben onszelf twee werkdagen per ontvanger gegeven, omdat het anders onmogelijk wordt om
+            drie
+            nieuwe apparaten te bouwen en te programmeren binnen twee weken.
+          </li>
+        </ol>
+      </ol>
+
+      <p>Tijdens het project hebben we binnen het team ook een aantal feedback rondes in de vorm van brainstorm sessies
+        gehouden. Zo hebben we feedback gegeven op de werking van de afstandsbediening waardoor ik wist wat er verbeterd
+        moest worden qua code. Ook zijn we door middel van feedback erachter gekomen dat sommige doelstellingen
+        onhaalbaar
+        waren met de tijd een materiaal dat we beschikbaar hadden. Zo hebben we aan elkaar gevraagd wat het nut was van
+        de
+        muziek, en we hebben besproken wat het nut was van meer kanalen. Door feedback zijn we dus verder gekomen en
+        hebben
+        we onnodige toevoegingen achter ons gelaten.</p>
+      <p>Tijdens de markt hebben we ook om feedback gevraagd over het product, maar ook over de presentatie:</p>
+      <ul id="field">
+        <b>Product:</b>
+        <li>Meerdere modules gebruikt is heel cool, het gat voor de infrarood misschien wat groter maken zodat die vaker
+          kan
+          lezen.</li>
+        <li>Heel tof product, enige tip is eigenlijk het uiterlijk wat aantrekkelijker.</li>
+        <li>Project ziet er goed uit. Volledig gebruik van microbits.</li>
+        <li>Uitvoerige uitwerking, tof dat jullie zoveel verschillende projecten hebben toegevoegd.</li>
+        <li>Super cool, de gordijn functie is mooi gedaan.</li>
+        <li>Geen feedback aleen top. Heel goed gemaakt, ook alle kleine dingetjes.</li>
+        <li>Zeer indrukwekkend en knap project, niet gedacht dat iemand zoiets had kunnen maken in die ene periode CLE.
+          Vooral complimenten voor de aandacht voor details, zoals het aangeven van de stand met de servo en het lichtje
+          voor de infrarood verbinding.</li>
+        <li>Mooi orgineel product en ook goed afgestemd op de doelgroep.</li>
+        <li>uniek, werkt goed.</li>
+        <li>Echt super gaaf gedaan en strak uitgewerkt, misschien alleen voordat het design mooier, dus geen tape, meer
+          kleur.</li>
+        <li>Cool project en goed dat het werkt. Alleen is de behuizing nog erg simpel.</li>
+
+        <b>Presentatie:</b>
+        <li>duidelijk uitgelegd.</li>
+        <li>taal gebruik is goed. Uitleg is duidelijk.</li>
+        <li>In presentatie nog handig om aan te geven wat de aanleiding was.</li>
+        <li>Goeie presentatie, ik snap alle functies.</li>
+        <li>Het was gewoon goed</li>
+        <li>Je neemt goed het publiek mee in de presentatie.</li>
+        <li>Duidelijk en goede demo.</li>
+        <li>Duidelijk uitgelegd.</li>
+        <li>Mooi alle functies laten zien. Misschien kun je nog foto's laten zien van je design/bouwproces,
+          bijvoorbeeld.
+          Verder misschien een leuke intro over je onderwerp.</li>
+      </ul>
+
+      <h2>Bijlagen</h2>
+      <div id="pdf" style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe
+          style="position:absolute;top:0;left:0;width:100%;height:100%;"
+          src="https://makecode.adafruit.com/---codeembed#pub:_h2wYyydgv59w" allowfullscreen="allowfullscreen"
+          frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+      <iframe id="pdf"
+        src="https://hrnl-my.sharepoint.com/personal/1056641_hr_nl/_layouts/15/Doc.aspx?sourcedoc={4a54b21d-b496-4096-bf60-6b01e4256102}&amp;action=embedview&amp;wdAr=1.7777777777777777"
+        width="476px" height="288px" frameborder="0">Dit is een ingesloten <a target="_blank"
+          href="https://office.com">Microsoft Office</a>-presentatiebestand dat mogelijk is gemaakt met <a
+          target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
+  </main>
+  <footer>
+    <p> &copy;Sijmen Lokers</p>
+    <a href="JavaScript:window.close()" aria-label="Link naar de vorige pagina">
+      <button type="submit">
+        &#8656; Terug naar de vorige pagina</button>
+    </a>
+  </footer>
+</body>
