@@ -3,7 +3,6 @@ window.addEventListener('load', init);
 // global variables
 
 // get elements
-let removeWhenLoaded;
 let headerText;
 let seeMore;
 let backgroundVideo;
@@ -18,7 +17,6 @@ let headerAnimation = 0;
 // initial function
 function init() {
     body = document.getElementById('body');
-    removeWhenLoaded = document.getElementById('remove-when-loaded');
     headerText = document.getElementById('header-text');
     seeMore = document.getElementById('see-more');
     backgroundVideo = document.getElementById('background-video');
@@ -34,8 +32,6 @@ function init() {
 
     randomizeText(document.getElementById("header-word-one"));
     randomizeText(document.getElementById("header-word-two"));
-
-    // removeWhenLoaded.remove();
 }
 
 function randomDisplay() {

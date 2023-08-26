@@ -19,6 +19,7 @@ let headerImage;
 let navImage;
 
 // functional
+let removeWhenLoaded
 let darkmode;
 let language;
 let hamburger;
@@ -27,8 +28,10 @@ let navbar;
 let hamburgerOpen = false;
 let hamburgerMenu;
 
+
 // initial function
 function init() {
+    removeWhenLoaded = document.getElementById('load-bar');
 
     if (document.getElementById('language-button')) {
         homepage = true;
@@ -78,7 +81,16 @@ function init() {
     // set the copyright date to the current year
     document.getElementById('date').innerHTML = (new Date().getFullYear()).toString();
 
-    fadeInPage();
+    Promise.all(Array.from(document.images).filter(img => !img.complete).map(img => new Promise(resolve => { img.onload = img.onerror = resolve; }))).then(() => {
+        console.log('images finished loading');
+        body.style.overflowY = 'scroll'
+        removeWhenLoaded.style.animation = 'fadeOut ease 1 2s'
+        removeWhenLoaded.style.opacity = '0'
+
+        removeWhenLoaded.addEventListener("animationend", function() {
+            removeWhenLoaded.remove()
+        });
+    });
 }
 
 function mobileMenu() {
@@ -265,12 +277,4 @@ function randomHeaderImage() {
     navImage.style.backgroundImage = `url("${images[randomNumber]}")`;
     navImage.style.filter = `drop-shadow(0px 0px 25px ${glows[randomNumber]})`;
 
-}
-
-function fadeInPage() {
-    if (!window.AnimationEvent) {
-        return;
-    }
-    let fader = document.getElementById('fader');
-    fader.classList.add('fade-out');
 }
