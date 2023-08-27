@@ -38,6 +38,10 @@ div {
     font-size: 20px;
 }
 
+.flex-row {
+    display: flow;
+}
+
 .loading {
     width: 100vw;
     height: 100vh;
@@ -56,7 +60,7 @@ div {
     width: 150px;
     height: 150px;
     border: 25px solid rgba(128, 128, 128, 0.16);
-    border-top-color: rgba(0, 0, 255, 0.78);
+    border-top-color: #118AB2;
     border-radius: 50%;
     animation: loadingAnimation infinite 2s linear;
 }
@@ -290,6 +294,89 @@ nav {
     transition: all 0.2s ease-in-out;
     background-color: var(--text);
 }
+
+.radio-buttons {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.radio-button {
+    width: 50%;
+    text-align: center;
+    background: var(--card);
+    cursor: pointer;
+    font-weight: bold;
+    border: rgba(12, 90, 116, 0) 5px solid;
+    transition: 0.25s ease-in-out;
+    user-select: none;
+}
+
+#radio-button-left {
+    border-radius: 50px 0 0 50px;
+    border-right: var(--text) 2px solid !important;
+}
+
+#radio-button-right {
+    border-radius: 0 50px 50px 0;
+    border-left: var(--text) 2px solid !important;
+}
+
+.active-radio-button {
+    background-color: #118AB2;
+    border: #0c5a74 5px solid;
+}
+
+#project-showcase-area {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+#project-showcase-area a {
+    width: 270px;
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    background-color: var(--item-card);
+    color: var(--text);
+    text-decoration: none;
+    padding: 2px;
+}
+
+#project-showcase-area img {
+    width: 100%;
+    min-height: 50%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#project-showcase-area h2 {
+    margin: 0;
+}
+
+#project-showcase-area a:hover {
+    transform: translateY(-10px);
+    transition: 200ms ease;
+}
+
+.subtitle, .date {
+    font-size: 0.7em;
+    margin: 0;
+}
+
 
 
 a {

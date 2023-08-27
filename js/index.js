@@ -32,6 +32,9 @@ function init() {
 
     randomizeText(document.getElementById("header-word-one"));
     randomizeText(document.getElementById("header-word-two"));
+
+    // calculate my age, too lazy to change each year.
+    document.getElementById('age').innerHTML = (new Date(new Date() - new Date("2003/11/12")).getFullYear() - 1970).toString();
 }
 
 function randomDisplay() {

@@ -1,0 +1,26 @@
+{
+  "projects": [
+    {
+      "type" : 0,
+      "title_dutch" : "Ice Age",
+      "title_english" : "Ice Age",
+      "subtitle" : "Plantenkwekerij de Groot",
+      "date" : "26-10-2018",
+      "description_dutch" : "Een video om een beursstand te promoten.",
+      "description_english" : "A video made to promote an exhibition booth.",
+      "image" : "./projects/ice-age.webp",
+      "page" : "./projects/ice-age.html"
+    },
+    {
+      "type" : 1,
+      "title_dutch" : "Park Plaag",
+      "title_english" : "Park Plague",
+      "subtitle" : "Hogeschool Rotterdam",
+      "date" : "27-06-2023",
+      "description_dutch" : "\"Park Plaag\" is een Tower Defense game die zich afspeelt in het Rotterdamse Park 1943, waar je met stadsiconen ongedierte tegenhoud.",
+      "description_english" : "\"Park Plague\" is a Tower Defense game set in Rotterdam's Park 1943, where you use city icons to stop pests.",
+      "image" : "./projects/park_plaag.png",
+      "page" : "./projects/park-plaag.html"
+    }
+  ]
+}

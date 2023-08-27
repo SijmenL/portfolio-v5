@@ -33,11 +33,7 @@ let hamburgerMenu;
 function init() {
     removeWhenLoaded = document.getElementById('load-bar');
 
-    if (document.getElementById('language-button')) {
-        homepage = true;
-    } else {
-        homepage = false;
-    }
+    homepage = !!document.getElementById('language-button');
 
     hamburger = document.querySelector(".hamburger");
     nav = document.getElementById('nav-content');
@@ -73,10 +69,6 @@ function init() {
     languageSwitcher();
     darkMode();
     randomHeaderImage();
-
-    // calculate my age, too lazy to change each year.
-    document.getElementById('age-english').innerHTML = (new Date(new Date() - new Date("2003/11/12")).getFullYear() - 1970).toString();
-    document.getElementById('age-dutch').innerHTML = (new Date(new Date() - new Date("2003/11/12")).getFullYear() - 1970).toString();
 
     // set the copyright date to the current year
     document.getElementById('date').innerHTML = (new Date().getFullYear()).toString();
@@ -235,7 +227,7 @@ function languageSwitcher() {
         // Change elements based on the classes
         let style = document.createElement('style');
         style.id = 'style';
-        style.innerHTML = ".dutch {display: block;} .english {display: none;}";
+        style.innerHTML = ".dutch {display: inline;} .english {display: none;}";
         body.appendChild(style);
 
         if (homepage) {
@@ -249,7 +241,7 @@ function languageSwitcher() {
         // Change elements based on the classes
         let style = document.createElement('style');
         style.id = 'style';
-        style.innerHTML = ".dutch {display: none;} .english {display: block;}";
+        style.innerHTML = ".dutch {display: none;} .english {display: inline;}";
         body.appendChild(style);
 
         if (homepage) {
@@ -270,9 +262,10 @@ function randomHeaderImage() {
     let glows = ["#2d1f04", "#090701", "#182028", "#2c356a", "#301101", "#29002d", "#2c356a", "#2c356a", "#2c356a", "#2c356a"];
     let randomNumber = Math.floor(Math.random() * images.length);
 
-
-    headerImage.style.backgroundImage = `url("${images[randomNumber]}")`;
-    headerImage.style.filter = `drop-shadow(0px 0px 25px ${glows[randomNumber]})`;
+    if (homepage) {
+        headerImage.style.backgroundImage = `url("${images[randomNumber]}")`;
+        headerImage.style.filter = `drop-shadow(0px 0px 25px ${glows[randomNumber]})`;
+    }
 
     navImage.style.backgroundImage = `url("${images[randomNumber]}")`;
     navImage.style.filter = `drop-shadow(0px 0px 25px ${glows[randomNumber]})`;
